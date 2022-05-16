@@ -24,8 +24,9 @@ if user_bet:
     is_race_on = True
 
 while is_race_on:
-    rand_distance = random.randint(0,10)
-    turtle.forward(rand_distance)
+    for turtle in all_turtles:
+        rand_distance = random.randint(0,10)
+        turtle.forward(rand_distance)
 
 print(all_turtles)
 screen.exitonclick()
